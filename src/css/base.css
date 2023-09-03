@@ -1,0 +1,99 @@
+:root {
+    /* ==Colors== */
+
+    /* -----------------------Light----------------- */
+    --grey-text-color: #b4afaf;
+    --bg-color: #f6f6f6;
+    --black-text-color: #111111;
+    --accent-yellow-color: #eac645;
+    --accent-blue-color: #4f2ee8;
+    --categories-text-color: #11111199;
+    --scroll-color: #e0e0e0;
+    --bagdrop-color: #11111166;
+    --white-color: #ffffff;
+    --logo-color: #000000;
+
+    /* -----------------------Dark----------------- */
+
+    --bg-color-dark: #202024;
+    --logo-dark: #F3F3F3;
+
+    /* ==Fonts== */
+
+    --main-text-font: 'DM Sans', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    color: var(--grey-text-color);
+    font-family: var(--main-text-font);
+    background-color: var(--bg-color);
+}
+
+/* dark/light */
+body.light{
+    background-color: #F6F6F6;
+    color: #111111;
+}
+
+body.dark {
+    background-color: #202024;
+    color: #ffffff;
+}
+/* Стили для header в светлой теме */
+body.light header {
+    background-color: #FFFFFF;
+    color: #111111;
+}
+
+/* Стили для header в тёмной теме */
+body.dark header {
+    background-color: #111111;
+    color: #FFFFFF;
+}
+
+
+/* dark/light */
+
+section {
+    padding-top: 40px;
+}
+
+.container {
+    min-width: 375px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* @media screen and (min-width: 375px) {
+    .container {
+        
+    }
+} */
+
+@media screen and (min-width: 768px) {
+    .container {
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .container {
+        display: flex;
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1439px) {
+    .left-wrapper {
+    display: flex;
+}
+}
+
